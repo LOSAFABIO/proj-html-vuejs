@@ -1,0 +1,25 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fa-caret-right{
+    color: #eac5ba;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: rotate(-90deg);
+    height: 60px;
+}
+
+.active{
+    border-bottom: solid 2px rgb(206, 53, 53);
+    padding-bottom: 10px;
+}
+
+p{
+    opacity: 0.6;
+  }
