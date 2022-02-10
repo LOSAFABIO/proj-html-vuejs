@@ -1,18 +1,18 @@
 <template>
-    <div class="loader">
-        <div class="text">Loading...</div>
+    <div class="loading">
+        <div class="text">Loading..</div>
     </div>
 </template>
 
 <script>
 export default {
-    name : "Loader"
+    name : "loaderPage"
 }
 </script>
 
 <style scoped lang="scss">
 
-.loader{
+.loading{
     position: fixed;
     top: 0;
     left: 0;
@@ -28,5 +28,7 @@ export default {
 
 .text {
     text-transform: uppercase;
-    letter-spacing: 2px;
-}    
+    letter-spacing: 2px; 
+}
+
+</style>

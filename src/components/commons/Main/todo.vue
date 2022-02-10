@@ -6,7 +6,7 @@
                     <h1>What we do?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Doloremque aperiam perferendis, consectetur quae rerum sit. </p>
-                    <button>
+                    <button @click="scrollToTop()">
                     <span>Read more</span>
                     <i class="fa-solid fa-play"></i>
                     </button>
@@ -64,6 +64,11 @@ export default {
                 }
             ]
         }
+    },
+    methods : {
+      scrollToTop(){
+        window.scrollTo(0, 0);
+      }
     }
 }
 </script>

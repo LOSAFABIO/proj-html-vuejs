@@ -21,7 +21,7 @@
                         <p>{{elemento.moneyback}} Money back</p>
                     </li>
                 </ul>
-                <button>
+                <button @click="scrollToTop()">
                 <span>Learn more</span>
                 <i class="fa-solid fa-play"></i>
                 </button>
@@ -129,8 +129,12 @@ export default {
 
             ]
         }
+    },
+    methods : {
+      scrollToTop(){
+        window.scrollTo(0, 0);
+      }
     }
-
 }
 </script>
 

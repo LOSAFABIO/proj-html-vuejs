@@ -1,32 +1,37 @@
 <template>
-      <div class="container">
-<!-- Main suddiviso in 6 parti -->
+  <div>
+    <!-- <div v-if="!loading"> -->
+        <div class="container">
+  <!-- Main suddiviso in 6 parti -->
 
-  <!-- PRESENTAZIONE -->
+    <!-- PRESENTAZIONE -->
 
-        <presentazione />
+          <presentazione />
 
-  <!-- PROGETTI -->
+    <!-- PROGETTI -->
 
-        <progetti />
+          <progetti />
 
-  <!-- TODO -->
+    <!-- TODO -->
 
-        <todo />
+          <todo />
 
-  <!-- VIDEO -->
+    <!-- VIDEO -->
 
-        <videoProject />
+          <videoProject />
 
-  <!-- TARIFFE -->
+    <!-- TARIFFE -->
 
-        <tariffe />
+          <tariffe />
 
-  <!-- DATI UTENTE -->
+    <!-- DATI UTENTE -->
 
-        <datiUtente />
+          <datiUtente />
 
-      </div>
+        </div>
+    <!-- </div> -->
+    <!-- <loaderPage /> -->
+  </div>
 </template>
 
 <script>
@@ -37,6 +42,7 @@ import todo from "./commons/Main/todo.vue";
 import videoProject  from "./commons/Main/videoProject .vue";
 import tariffe from "./commons/Main/tariffe.vue";  
 import datiUtente from "./commons/Main/datiUtente.vue";
+// import loaderPage from "./select/loaderPage.vue"
 
 
 
@@ -48,13 +54,17 @@ export default {
     todo,
     videoProject,
     tariffe,
-    datiUtente
+    datiUtente,
+    // loaderPage
   },
-  data(){
-    return{
-      loading : true
-    }
-  }
+  // data(){
+  //   return{
+  //     loading : false
+  //   }
+  // },
+  // created() {
+  //   this.loading = true  
+  // }
 }
 </script>
 

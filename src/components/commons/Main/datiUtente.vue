@@ -12,7 +12,7 @@
                 <div class="input-testo"><input type="text" placeholder="Comment"></div>
                 <div class="input-testo name"><input type="text" placeholder="Name"></div>
                 <div class="input-testo email"><input type="text" placeholder="Email"></div>
-                <button>
+                <button @click="scrollToTop()">
                     <span>Submit</span>
                     <i class="fa-solid fa-play"></i>
                 </button>
@@ -26,7 +26,12 @@
 
 <script>
 export default {
-    name : "datiUtente"
+    name : "datiUtente",
+    methods : {
+      scrollToTop(){
+        window.scrollTo(0, 0);
+      }
+    }
 }
 </script>
 
