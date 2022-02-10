@@ -24,7 +24,9 @@
           <a href="">Elements</a>
         </li>
         <li>     
-          <a href="">menu</a>
+          <a href="">
+            <img src="../studio/svg/svg-1.svg" alt="">
+          </a>
         </li>
       </ul>
     </nav>
@@ -44,12 +46,12 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite;
   padding: 10px;
 }
 
 .logo-img{
   width: 32%;
+  margin-left: 10px;
 }
 
 .listamenu{
@@ -60,9 +62,15 @@ export default {
       list-style-type: none;
       margin: 10px 20px;
       font-size: 0.8rem;
+
       a{
         text-decoration: none;
         color: black;
+
+        img{
+          width: 15px;
+          height: 15px;
+        }
       }
     }
 }

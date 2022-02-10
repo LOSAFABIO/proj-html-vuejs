@@ -6,19 +6,20 @@
         <br> Here's the proof - Bryson, your brand new portfolio. </p>
       <div class="social-footer">
         <a href="#">
-          <img src="" alt="">
+          <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="#">
-          <img src="" alt="">
+          <i class="fa-brands fa-facebook-f"></i>
         </a>      
         <a href="#">
-          <img src="" alt="">
+          <i class="fa-brands fa-twitter"></i>
         </a>      
         <a href="#">
-          <img src="" alt="">
+          <i class="fa-brands fa-pinterest-p"></i>           
         </a>      
       </div>
       <i class="fa-solid fa-caret-right"></i>
+      <i class="fa-solid fa-angle-up"></i>
     </div>
   </div>
 </template>
@@ -42,14 +43,49 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
+
   .text-footer{
     text-align: center;
     font-size: 0.7rem;
   }
+
   .logo-img{
     width: 22%;
     margin: 10px;
   }
+
+  .fa-angle-up{
+    bottom: 9%;
+  }
+
+  .social-footer{
+    margin: 20px 0;
+
+  a{
+    .fa-instagram, .fa-facebook-f, .fa-twitter , .fa-pinterest-p{
+          width: 8px;
+          height: 8px;
+          color: white;
+          margin:0 4px;
+          background-color: black;
+          padding: 6px;
+          border-radius: 50%;
+      }
+      .fa-instagram{
+        background-color: #6aa9aa;
+      }
+      .fa-facebook-f{
+        background-color: #f6d193;
+      }
+      .fa-twitter{
+        background-color: #f7bba7;
+      }
+      .fa-pinterest-p{
+        background-color: #d8d496;
+      }
+    }   
+  }
 }
+
 
 </style>

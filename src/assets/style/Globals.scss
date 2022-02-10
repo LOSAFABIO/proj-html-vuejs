@@ -15,11 +15,51 @@
     height: 60px;
 }
 
+.fa-angle-up{
+    color: white;
+    position: absolute;
+    right: 30.5px;
+    bottom: 0;
+    font-size: 10px;
+}
+
 .active{
-    border-bottom: solid 2px rgb(206, 53, 53);
-    padding-bottom: 10px;
+    border-bottom: solid 2px #f3ccc3;
 }
 
 p{
     opacity: 0.6;
+    font-size: 0.7rem;
+  }
+
+button{
+padding: 8px 35px;
+background-color: white;
+border: solid 1px #89aaad;
+border-radius: 20px;
+text-decoration: none;
+font-size: 0.6rem;
+margin: 40px 15px;
+cursor: pointer;
+
+    span{
+        padding-right: 5px;
+    }
+
+    .fa-play{
+        height: 6px;
+        padding: 1px;
+    }
+    .fa-caret-right{
+    bottom: 85%;
+    }
+}
+
+
+input{
+    border: none;
+    outline: none;
+  }
+  .input-testo{
+    border-bottom: solid 1px black;
   }
