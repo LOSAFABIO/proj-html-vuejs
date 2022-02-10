@@ -4,8 +4,8 @@
             <li 
             v-for="(elemento, indice) in menuArr" :key="indice" >
                 <a 
-                @click="isActive = !isActive"
-                :class="{active : isActive}"
+                @click="currentAct = indice"
+                :class="{active : indice == currentAct}"
                 href="#">{{elemento.select}}</a>
             </li>
             <!-- <li>
@@ -38,7 +38,7 @@ export default {
     name : "menuHeader",
     data(){
         return {
-            isActive : false,
+            currentAct : 0,
             menuArr  : [
                 {
                     select : "Home"
@@ -72,6 +72,8 @@ export default {
 
 <style scoped lang="scss">
 
+@import "../../../assets/style/vars.scss";
+
 .listamenu{
   display: flex;
   justify-content: center;
@@ -83,12 +85,12 @@ export default {
 
         a{
         text-decoration: none;
-        color: black;
+        color: $secondColor;
 
-        img{
-            width: 15px;
-            height: 15px;
-        }
+            img{
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 }

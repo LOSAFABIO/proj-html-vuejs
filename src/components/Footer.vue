@@ -30,8 +30,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+@import "../assets/style/vars.scss";
 
 .container{
   background-image: url("../studio/img/h2-footer-img-01.jpg");
@@ -65,23 +66,23 @@ export default {
     .fa-instagram, .fa-facebook-f, .fa-twitter , .fa-pinterest-p{
           width: 8px;
           height: 8px;
-          color: white;
+          color: $mainColor;
           margin:0 4px;
-          background-color: black;
+          background-color: $secondColor;
           padding: 6px;
           border-radius: 50%;
       }
       .fa-instagram{
-        background-color: #6aa9aa;
+        background-color: $instaColor;
       }
       .fa-facebook-f{
-        background-color: #f6d193;
+        background-color: $facebookColor;
       }
       .fa-twitter{
-        background-color: #f7bba7;
+        background-color: $twitterColor;
       }
       .fa-pinterest-p{
-        background-color: #d8d496;
+        background-color: $pintaColor;
       }
     }   
   }

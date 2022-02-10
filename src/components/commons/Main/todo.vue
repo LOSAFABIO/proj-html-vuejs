@@ -75,6 +75,8 @@ export default {
 
 <style scoped lang="scss">
 
+@import "../../../assets/style/vars.scss";
+
 .todo{
     position: relative;
 
@@ -153,7 +155,7 @@ export default {
       a{
         .fa-facebook-f, .fa-instagram, .fa-twitter , .fa-pinterest-p{
           width: 8px;
-          color: black;
+          color: $secondColor;
         }
       }    
     }

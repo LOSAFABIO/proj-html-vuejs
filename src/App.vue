@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
       <Header />
       <Main />
       <Footer />
@@ -28,6 +28,6 @@ export default {
 @import "assets/style/Globals.scss";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:  'Montserrat', 'Lato', 'Roboto', 'Nunito', 'Mohave', sans-serif;
 } 
 </style>

@@ -36,9 +36,9 @@ export default {
 
   img{
     width: 60px;
-  }
-  img:hover{
-    opacity: 0.9;
+    &:hover{
+      opacity: 0.9;
+    }
   }
 }
 

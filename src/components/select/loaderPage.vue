@@ -12,6 +12,8 @@ export default {
 
 <style scoped lang="scss">
 
+@import "../../../assets/style/vars.scss";
+
 .loading{
     position: fixed;
     top: 0;

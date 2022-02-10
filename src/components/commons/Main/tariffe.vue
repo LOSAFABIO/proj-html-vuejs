@@ -3,7 +3,10 @@
         <div class="tariffe">
             <div v-for="(elemento, indice) in tariffeArr" :key="indice" class="tariffa basic">
                 <h3>{{elemento.tipo}}</h3>
-                <p class="money">{{elemento.costo}}</p>
+                <p class="money">{{elemento.costo}}
+                    <span class="dollaro">$</span>
+                </p>
+                
                 <ul>
                     <li>
                         <p>{{elemento.concepts}} Design concepts</p>
@@ -101,7 +104,7 @@ export default {
             tariffeArr : [
                 {
                     tipo      : "Basic",
-                    costo     : "99$",
+                    costo     : "99",
                     concepts  :   5,
                     copyright : "Full",
                     direction : "Art",
@@ -110,7 +113,7 @@ export default {
                 },
                 {
                     tipo      : "Standard",
-                    costo     : "119$",
+                    costo     : "119",
                     concepts  :   10,
                     copyright : "Full",
                     direction : "Art",
@@ -119,7 +122,7 @@ export default {
                 },
                 {
                     tipo      : "Basic",
-                    costo     : "139$",
+                    costo     : "139",
                     concepts  :   15,
                     copyright : "Full",
                     direction : "Art",
@@ -140,6 +143,8 @@ export default {
 
 <style scoped lang="scss">
 
+@import "../../../assets/style/vars.scss";
+
 .container-tariffe{
   width: 100%;
   background-image: url("../../../studio/img/h2-background-img-03.png");
@@ -159,11 +164,11 @@ export default {
     }
 
     .circle{
-      background-color: red;
+      background-color: $fourColor;
     }
 
     .carrello{
-      background-color: white;
+      background-color: $mainColor;
     }
 
     .circle, .carrello{
@@ -187,20 +192,20 @@ export default {
 
     .standard{
       border: none;
-      background-color: #e8f3f0;
+      background-color: $tariffeBgColor;
     }
 
     .basic{
-      border: solid 2px #e9cba4;
+      border: solid 2px $tariffeBrdColor;
     }
 
     .basic:nth-child(2n) {   
         border: none;
-        background-color: #e8f3f0;  
+        background-color: $tariffeBgColor;  
     }
 
     .basic:nth-child(3n) {   
-        border: solid 2px #f3ccc3;
+        border: solid 2px $thirdColor;
     }
 
     .tariffa{
@@ -213,10 +218,19 @@ export default {
       padding: 35px 0 10px 0;
 
       .money{
+        position: relative;
         font-size: 2rem;
         opacity: 1;
         padding-top: 10px;
+
       }
+        .dollaro{
+            position: absolute;
+            top: 15px;
+            right: -10px;
+            font-size: 12px;
+        }
+
 
       li{
         list-style-type: none;
