@@ -4,38 +4,19 @@
       <img class="logo-img" src="../studio/img/logo-img-01.png" alt="">
     </div>
     <nav class="menu">
-      <ul class="listamenu">
-        <li class="active">
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="">Pages</a>        
-        </li>
-        <li>
-          <a href="">Portfolio</a>
-        </li>
-        <li>
-          <a href="">Blog</a>
-        </li>
-        <li>     
-          <a href="">Shop</a>
-        </li>
-        <li>     
-          <a href="">Elements</a>
-        </li>
-        <li>     
-          <a href="">
-            <img src="../studio/svg/svg-1.svg" alt="">
-          </a>
-        </li>
-      </ul>
+      <menuHeader />
     </nav>
   </div>
 </template>
 
 <script>
+import menuHeader from "./commons/Header/menuHeader.vue"
+
 export default {
-  name: 'Header'
+  name       : 'Header',
+  components : {
+    menuHeader
+  }
 }
 </script>
 
@@ -52,27 +33,6 @@ export default {
 .logo-img{
   width: 32%;
   margin-left: 10px;
-}
-
-.listamenu{
-  display: flex;
-  justify-content: center;
-
-    li{
-      list-style-type: none;
-      margin: 10px 20px;
-      font-size: 0.8rem;
-
-      a{
-        text-decoration: none;
-        color: black;
-
-        img{
-          width: 15px;
-          height: 15px;
-        }
-      }
-    }
 }
 
 

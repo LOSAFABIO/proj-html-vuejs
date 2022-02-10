@@ -1,41 +1,43 @@
 <template>
-  <div class="container">
-    <!-- Main suddiviso in 6 parti -->
+      <div class="container">
+<!-- Main suddiviso in 6 parti -->
 
-<!-- PRESENTAZIONE -->
+  <!-- PRESENTAZIONE -->
 
-    <presentazione />
+        <presentazione />
 
-<!-- PROGETTI -->
+  <!-- PROGETTI -->
 
-    <progetti />
+        <progetti />
 
-<!-- TODO -->
+  <!-- TODO -->
 
-    <todo />
+        <todo />
 
-<!-- VIDEO -->
+  <!-- VIDEO -->
 
-    <videoProject />
+        <videoProject />
 
-<!-- TARIFFE -->
+  <!-- TARIFFE -->
 
-    <tariffe />
+        <tariffe />
 
-<!-- DATI UTENTE -->
+  <!-- DATI UTENTE -->
 
-    <datiUtente />
+        <datiUtente />
 
-  </div>
+      </div>
 </template>
 
 <script>
+
 import presentazione from "./commons/Main/presentazione.vue";
 import progetti from "./commons/Main/progetti.vue";
 import todo from "./commons/Main/todo.vue";
 import videoProject  from "./commons/Main/videoProject .vue";
 import tariffe from "./commons/Main/tariffe.vue";  
 import datiUtente from "./commons/Main/datiUtente.vue";
+
 
 
 export default {
@@ -47,6 +49,11 @@ export default {
     videoProject,
     tariffe,
     datiUtente
+  },
+  data(){
+    return{
+      loading : true
+    }
   }
 }
 </script>

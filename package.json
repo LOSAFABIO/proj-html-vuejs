@@ -8,6 +8,7 @@
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "build": "^0.1.4",
     "core-js": "^3.6.5",
     "fontawesome": "^5.6.3",

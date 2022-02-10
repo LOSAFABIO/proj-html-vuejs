@@ -123,7 +123,7 @@ export default {
         .icona{
           display: flex;
           align-items: center;
-          margin: 25px 40px;
+          margin: 25px 35px;
           width: 155px;
 
           img{
